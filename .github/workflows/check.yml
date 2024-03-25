@@ -14,3 +14,4 @@ jobs:
             with:
                 repository-to-clone: ${{ github.repository }}
                 repository-ref: ${{ github.ref_name }}
+                path: ./.github/actions
