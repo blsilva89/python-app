@@ -1,0 +1,16 @@
+name: Check for python files
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+    analisar-arquivos:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Run analysis
+            uses: blsilva89/action@v1
+            with:
+                repository-to-clone: ${{ github.repository }}
+                repository-ref: ${{ github.ref_name }}
